@@ -1,0 +1,48 @@
+		/*Made by LeGend077 &copy beta 1.05*/
+
+
+.mainbuttonscontainer{	
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 52%;
+	top: 50%;
+	transform: translate(-48.1%, -24.5%);
+}
+
+.titlecontainer{
+	position: fixed;
+	left: 25.5%;
+	margin-top: 40px;
+}
+
+body{
+	background-size: cover;
+	background-image: url("./assets/i01_panorama_0.png");
+}
+
+.dressingroom{
+	position: absolute;
+	width: auto;
+	height: auto;
+	position: absolute;
+	left: 90%;
+	top: 65%;
+	transform: translate(-49%, -24.5%);
+}
+.imgs{
+	margin-bottom: 50px;
+	margin-left: 30px;
+}
+
+.lowerbuttonspanel{
+	position: absolute;
+	top: 78%;
+	left: 2%;
+	
+}
+
+.profile{
+	display: none;
+	background-color: rgb(212,212,212);
+}

@@ -1,0 +1,126 @@
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <link rel="stylesheet" href="css/main.css">
+                        <link rel="stylesheet" href="https://unpkg.com/minecraft-framework-css@1.1.0/css/main.css">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Minecraft Bedrock Edition</title>
+                    </head>
+
+
+                    <style>
+                        *{
+                            font-family: 'Roboto';
+                            font-weight: 400;
+                        }
+                     .splash {
+        position:absolute;
+        margin-left: 950px;
+        margin-top: 140px;
+        color: #ff0;
+        transform: translate(-50%, -50%) rotateZ(-20deg) scale(1.2);
+        width: max-content;
+        text-shadow: 1px 1px #220;
+        font-size: 15px;
+        animation: splashAnim 600ms infinite alternate linear;
+      }
+      @keyframes splashAnim {
+        to {
+           transform: translate(-51%, -50%) rotateZ(-20deg) scale(1.06);
+        }
+      }
+      .button{
+          padding-left: 102px;
+          padding-right: 102px;
+          margin-bottom: 10px;
+      }
+      .settings{
+          padding-left: 93px;
+          padding-right: 85px;
+          text-align: center;
+      }
+      .marketplace{
+        padding-left: 76px;
+          padding-right: 74px;
+      }
+       .room{
+           padding:  0 20;
+       }
+       .ach{
+           width: 0;
+           padding-top:0% ;
+           padding-bottom:0% ;
+           padding-left:12;
+           padding-right:45 ;
+       }
+       .second{
+        width: 0;
+           padding-top:0% ;
+           padding-bottom:0% ;
+           padding-left: 16px;
+           padding-right:42 ;
+       }
+                    </style>
+                    <body>
+     
+
+<div class="titlecontainer">
+    <img src="css/assets/title.png" alt="" width="670" height="109">
+</div>
+
+<div class="mainbuttonscontainer">
+    <button class="button" onclick="crash()">Play</button>
+    <button class="button settings" onclick="OpensettingsPage()">Settings</button>
+    <button class="button marketplace" onclick="market()">Marketplace</button>
+</div>
+<div class="splash">By LeGend077</div>
+
+<div class="dressingroom"><img src="css/assets/icon_steve.png" alt="" class="imgs">
+<button class="button room inline" onclick="profile()">Profile</button>
+</div>
+
+<div class="profile" id="proflie">
+    Name: LeGend077 | GamerTag: Legend0778825 | Visit Me: <a href="//github.com/Legend077">Github</a>
+ <button class="button inline" onclick="profileclose()" style="padding:0 10px">Close</button>  
+</div>
+
+<div class="lowerbuttonspanel inline"><button class="button ach" onclick="feedback()"><img src="css/assets/Feedback.png" alt="" width="35px"></button>&nbsp;&nbsp;&nbsp;<button class="button second"><img onclick="openAch()"  src="css/assets/achievements.png" alt="" width="25px"></button></div>
+
+<div id="Properties" class="documentation border-gray"></div>
+</div>
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script>
+    function crash(){
+        window.location.assign('https://www.minecraft.net/en-us/get-minecraft')
+    }
+    function profileclose(){
+        document.getElementById('proflie').style.display="none";
+    }
+    function profile(){
+        document.getElementById('proflie').style.display="block";
+    }
+    function feedback(){
+        window.location.assign('https://feedback.minecraft.net')
+    }
+    function openAch(){
+        window.location.assign('settings.html')
+    }
+    function market(){
+        window.location.assign('https://www.minecraft.net/en-us/marketplace')
+    }
+function OpensettingsPage() {
+  window.location.assign("settings.html")
+}
+</script>
+
+
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    </body>
+                    </html>
+
+            
+

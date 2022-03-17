@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Minecraft Bedrock Edition - Settings</title>
+		<link rel="icon" href="Favicon.ico">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="css/settings.css">
+	</head>
+	<body class="nomargin noscroll unselectable">
+		<div class="panorama">
+			<div class="top-header">
+				<a class="mojangles-gray header-title"><label for="" class="back" onclick="OpenhopmePage()">&lt;</label> <label for="" class="text">Settings</label></a>
+			</div>
+			<div class="doctabs border-gray">
+				<button class="squarebutton doctab mojangles-gray" onclick="opendoc(event, 'About')" id="DefaultOpen">Accessibility</button>
+				
+				<button class="squarebutton doctab mojangles-gray" onclick="opendoc(event, 'Global')">How to Play</button><a class="mojangles-white">Controls</a>
+				<button class="squarebutton doctab mojangles-gray" onclick="opendoc(event, 'Math')">Keyboard & Mouse</button>
+				<button class="squarebutton doctab mojangles-gray" onclick="opendoc(event, 'Query')">Controller</button>
+				<button class="squarebutton doctab mojangles-gray" onclick="opendoc(event, 'Variable')">Touch</button>
+				<a class="mojangles-white"></a>
+				<button class="squarebutton doctab mojangles-gray" onclick="opendoc(event, 'Properties')">Achievements</button>
+			</div>
+			<!--Info-->
+			<div id="About" class="documentation border-gray"></div>
+			<!--MoLang-->
+			<div id="Global" class="documentation border-gray"></div>
+			<div id="Math" class="documentation border-gray"></div>
+			<div id="Query" class="documentation border-gray"></div>
+			<div id="Variable" class="documentation border-gray"></div>
+			<!--Entity-->
+			<div id="Properties" class="documentation border-gray"></div>
+			<div id="Components" class="documentation border-gray"></div>
+			<div id="Behaviors" class="documentation border-gray"></div>
+			<div id="Events" class="documentation border-gray"></div>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/loaddata.js"></script>
+		<script src="assets/js/sections.js"></script>
+		<script src="assets/js/documentation/entity/componentdata.js"></script>
+		<script src="assets/js/documentation/entity/behaviordata.js"></script>
+		<script src="assets/js/documentation/entity/eventdata.js"></script>
+		<script src="assets/js/documentation/molang/globaldata.js"></script>
+		<script src="assets/js/documentation/molang/mathdata.js"></script>
+		<script src="assets/js/documentation/molang/querydata.js"></script>
+		<script src="assets/js/documentation/molang/variabledata.js"></script>
+		<script>
+			function OpenhopmePage(){
+				window.location.assign('index.html')
+			}
+		</script>
+	</body>
+</html>
